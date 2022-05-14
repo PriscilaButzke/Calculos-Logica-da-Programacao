@@ -16,8 +16,8 @@ public class Principal {
 
         System.out.println("Informe qual a conta deve ser realizada, digite: "
                 + "\n 1 para MA = (N1 + N2 + N3)/3"
-                + "\n 2 para MP = (N1*2) + (N2*3) + (N*5) / 10"
-                + "\n 3 para MH = 2/(1/n1)+(1/n2)"
+                + "\n 2 para MP = (N1*2 + N2*3 + N*5) / 10"
+                + "\n 3 para MH = 2/(1/n+1/n2)"
                 + "\n 4 para S = (a + b + c)/2"
                 + "\n 5 para a =  (5*(5-a)*(5-b)*(5-c))"
                 + "\n 6 para EP = Kx²/2"
@@ -84,8 +84,11 @@ public class Principal {
 
                 System.out.println("Digite o valor de c: ");
                 tema1.c = ler.nextDouble();
+                
+                System.out.println("Digite o valor de s: ");
+                tema1.s = ler.nextDouble();
 
-                System.out.println("O resultado é: " + tema1.a(tema1.a, tema1.b, tema1.c));
+                System.out.println("O resultado é: " + tema1.a());
                 break;
 
             case 6:
